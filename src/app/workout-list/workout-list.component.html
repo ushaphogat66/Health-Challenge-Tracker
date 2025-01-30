@@ -1,0 +1,28 @@
+<div class="workout-list">
+  <h2>Workout List</h2>
+  <form (ngSubmit)="addWorkout()">
+    <div>
+      <label for="userName">User Name:</label>
+      <input type="text" id="userName" [(ngModel)]="userName" name="userName" required>
+    </div>
+    <div>
+      <label for="workoutType">Workout Type:</label>
+      <input type="text" id="workoutType" [(ngModel)]="workoutType" name="workoutType" required>
+    </div>
+    <div>
+      <label for="workoutMinutes">Workout Minutes:</label>
+      <input type="number" id="workoutMinutes" [(ngModel)]="workoutMinutes" name="workoutMinutes" required>
+    </div>
+    <button type="submit">Add Workout</button>
+  </form>
+  <ul>
+    <li *ngFor="let user of userData">
+      <strong>{{ user.name }}</strong>
+      <ul>
+        <li *ngFor="let workout of user.workouts">
+          {{ workout.type }}: {{ workout.minutes }} mins
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

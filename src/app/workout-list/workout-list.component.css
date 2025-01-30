@@ -1,0 +1,25 @@
+.workout-list {
+  padding: 1rem;
+}
+
+.workout-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.workout-list form {
+  margin-bottom: 1rem;
+}
+
+.workout-list form div {
+  margin-bottom: 0.5rem;
+}
+
+.workout-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.workout-list li {
+  margin-bottom: 0.5rem;
+}
