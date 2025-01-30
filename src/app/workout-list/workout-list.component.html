@@ -3,15 +3,33 @@
   <form (ngSubmit)="addWorkout()">
     <div>
       <label for="userName">User Name:</label>
-      <input type="text" id="userName" [(ngModel)]="userName" name="userName" required>
+      <input
+        type="text"
+        id="userName"
+        [(ngModel)]="userName"
+        name="userName"
+        required
+      />
     </div>
     <div>
       <label for="workoutType">Workout Type:</label>
-      <input type="text" id="workoutType" [(ngModel)]="workoutType" name="workoutType" required>
+      <input
+        type="text"
+        id="workoutType"
+        [(ngModel)]="workoutType"
+        name="workoutType"
+        required
+      />
     </div>
     <div>
       <label for="workoutMinutes">Workout Minutes:</label>
-      <input type="number" id="workoutMinutes" [(ngModel)]="workoutMinutes" name="workoutMinutes" required>
+      <input
+        type="number"
+        id="workoutMinutes"
+        [(ngModel)]="workoutMinutes"
+        name="workoutMinutes"
+        required
+      />
     </div>
     <button type="submit">Add Workout</button>
   </form>
